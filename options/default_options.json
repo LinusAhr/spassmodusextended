@@ -1,0 +1,7 @@
+{
+  "animation_speed": 1000,
+  "randomness": 0.25,
+  "hue_rotation_selector": "img, video",
+  "color_selector": "p, h1, h2, h3",
+  "background_selector": "button, a"
+}

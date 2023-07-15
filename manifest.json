@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Spassmodus Extended",
+  "version": "1.0",
+
+  "description": ":^)",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["spassmodus.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "type": "module"
+  },
+
+  "permissions": ["scripting", "activeTab", "storage"],
+
+  "action": {
+    "default_icon": "icons/icon.png",
+    "default_title": "Spassmodus Extended",
+    "default_popup": "options/options.html"
+  },
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "spassmodusextended@hihihaha"
+    }
+  }
+}
